@@ -1,0 +1,156 @@
+
+.container{
+     
+    margin: auto;
+    max-width: 1260px;
+}
+    
+section{
+    float:left;
+    width: 100%;
+}
+    
+*{
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+.heading{
+    width: 50%;
+    float: left;
+}
+.heading a{
+    color: white;
+    text-decoration: none;
+}
+.list{
+
+    text-align: right;
+    width: 50%;
+    float: left;
+
+}
+.list li{
+
+        display: inline-block;
+        padding: 10px;
+    
+}
+.list a{
+    color: white;
+    text-decoration: none;
+}
+.banner{
+    background-color: gray;
+}
+.banner1{
+
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+
+}
+
+.type{
+    
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.button{
+
+        background: #f5233e;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 5px;
+        padding: 10px 30px;
+        border: 1px solid #f5233e;
+}
+.vsoc{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: unset;
+    
+}
+span{
+    color: red;
+}
+.img{
+    float: left;
+    width: 30%;
+}
+.img_fluid{
+     
+     padding: 15px;
+     height: 500px;
+     width: 450px;
+     padding-top: 70px;
+    padding-left: 61px;
+}
+
+.para{
+    float: left;
+    width: 70%;
+    padding: 50px;
+    
+
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 20px;
+    
+}
+.para h2{
+    padding: 20px;
+}
+.para li{
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0px;
+}
+.para span{
+    font-weight: bold;
+    color: black;
+}
+
+.link{
+    text-align: center;
+    background-color: black;
+}
+.link li{
+
+        display: inline-block;
+        padding: 10px;
+        font-size: 20px;
+       
+       
+        
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+.contact{
+    text-align: center;
+    padding: 23px;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,8 @@
+version: "2.0"
+services:
+  vsoc_website:
+    build: .
+    ports: 
+      - '8000:8000'
+    volumes:
+      - "/mnt/vsocdb/:/app/vsocdb"

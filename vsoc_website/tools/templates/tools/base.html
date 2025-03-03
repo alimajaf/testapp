@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vsoc</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="heading">
+                <a href="{% url 'home' %}"><h1>VSOC</h1></a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">Streams</a></li>
+                    <li><a href="{% url 'sessions' '2023' 'July' %}">Sessions</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">Documents</a></li>
+                </ul>
+            </div>
+          </div>          
+    </section>
+    <section class="banner">
+        <div class="container">
+          {% if user.is_authenticated %}
+          <div class="banner1">
+            <a href="{% url 'logout' %}"><input type="button" class="button" value="Logout"></a>
+        </div>
+          {% else %}
+            <div class="banner1">
+              <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <input type="text" class="type" name="username" placeholder="User Name" required>
+                <input type="password" class="type" name="password" placeholder="Password" required>
+                <button type="submit" class="button">Login</button>
+                <a href="{% url 'register_user' %}"><input type="button" class="button" value="SignUp"></a>
+              </form>
+            </div>
+          {% endif %}
+        </div>
+    </section>
+
+    <section class="main">
+      <div clas="container">
+            {% if messages %}
+              {% for message in messages %}
+                <div>
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+    <section>
+        <div class="link">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Go To Top</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About</a></li>
+             </ul>
+        </div>
+    </div>
+    </section>
+    <section class="footer">
+          <div class="contact">
+              <a href="#">&#169; 2023 VSOC GPIO</a>
+          </div>
+    </section>
+</body>
+</html>

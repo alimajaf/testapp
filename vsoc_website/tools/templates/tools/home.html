@@ -1,0 +1,24 @@
+{% extends 'tools/base.html' %}
+
+{% block content %}
+
+
+        <div class="vsoc">
+            <h1>WELCOME TO <span> VSOC </span>ADMINISTRATION DASHBOARD</h1>
+        </div>
+        <div class="img">
+            {% load static %}
+           <img src="{% static 'vsoc.avif' %}" alt="vsoc" class="img_fluid">
+        </div>
+        <div class="para">
+            <p>WE are the IT service team responsible for managing Linux,Windows,Database and other technologies,along with providing Level 1 support for many applications.Our dedicated team is here to ensure the smooth functioning of your system and application.</p>
+            <h2>Our Features:</h2>
+            <ul>
+                <li><span>24x7 Availability: </span> Our team is available round the clock to address any issue and provide timely support.</li>
+                <li><span>Mixed skill Set: </span> Our members come from diverse background,bringing a wide range of skills and expertise to tackle any challenge.</li>
+                <li><span>Great Team: </span> We work cohesively as a team to deliver top-notch services and maintain a high level of customer satisfaction</li>
+            </ul>
+        </div>
+</section>
+
+{% endblock %}

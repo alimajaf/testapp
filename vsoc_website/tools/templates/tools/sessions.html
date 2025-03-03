@@ -1,0 +1,14 @@
+{% extends 'tools/base.html' %}
+
+{% block content %}
+    <center>
+    <h1> Hello Vsoc <h1>
+
+    <p> Here is the calendar for {{year}} {{month}}</p>
+    <br><br>
+    {{ cal|safe }}
+    today: {{today}}
+    </center>
+    <br><br><br>
+    Report prodcued on: {{now}}
+{% endblock %}
